@@ -32,7 +32,7 @@ jobs:
                       "${{ github.event.inputs.file_name }}"
 
       - name: Uploader le torrent généré
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: "${{ github.event.inputs.torrent_name }}"
           path: "${{ github.event.inputs.torrent_name }}.torrent"
